@@ -1,3 +1,10 @@
+/*
+*
+* @ With css solved print problem.
+    It will print just printed area which id is selected and other all element id class will hide when command to print.
+*
+*/
+
 /* print css */
 @media print {
   body * {
