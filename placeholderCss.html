@@ -1,0 +1,54 @@
+	<!-- 
+	*
+	*@	All Content have checked
+		Just use it and modify with your content
+	*
+	*@	Solve Name: Place holder solution for css
+		Open Source and without licencse
+		--------------------------------
+
+	*@	How to use this content
+		just chose any form and it's put under any classes or id then css copy and paste in your css and
+		change it's selector with your modified selector.
+	 -->
+	<div class="myform">
+		<form  action="coverpage.php" method="post">
+			<input type="text" name="name" placeholder="Name"><br>
+			<input class="idd" type="email" name="id" placeholder="Id"><br>
+			<input type="text" name="registrationNo" placeholder="Registrtaion No"><br>
+			<input type="submit" name="submit" value="Submit">
+		</form>
+	</div>
+
+	<style type="text/css">
+		/*
+		*@ Its just solved placeholder css
+		 @ Editor	: Al Mamun - asifulmamun
+		   Contact	: asifulmamun@gmail.com
+		   -------------------------------------
+		   *You can change with your id or classes for selector of css.
+
+			@At first need to chose type or without type if you want to with type you can use below
+			 css
+			@Or If you want to without type just remoce this type and use normally like as:
+				input[type=text]::		=		input::placeholder (//just remove [] all content with 3rd brackets)
+		*/
+		.myform input[type=text]::placeholder{
+			color: red;
+		}/*normal*/
+		.myform input[type=text]::-webkit-input-placeholder{
+			color: red;
+		}/*crome*/
+		.myform input[type=text]:-moz-placeholder{
+			color: red;
+		}/*mozila firefox 4-18*/
+		.myform input[type=text]::-moz-placeholder{
+			color: red;
+		}/*mozila firefox 19-50*/
+		.myform input[type=text]:-ms-input-placeholder{
+			color: red !important;
+		}/*IE 10-11 need every propery value !important*/
+		.myform input[type=text]::-ms-input-placeholder{
+			color: red;
+		}/*edge*/
+	</style>
