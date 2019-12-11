@@ -18,4 +18,12 @@ width: 90% !important; height: 75px !important; }</style>';
 
 
 // --- Plugin End
+/*
+   -------------------- INSTALLATION -------------------
+	-- Copy this code and create a text raw file then paste in this file all copied code.
+		--- CHANGE/REPLACE YOUR url(http://login.png) WITH YOUR IMAGE LINK 'http://login.png'
+	-- Then save this file with extention your plugin name.php ".php" extention.
+	-- Then same create a folder with same name and this php file put in this folder then create this file as a zip (compressed)
+	-- Then you can Upload to your WordPress web site and active.
+*/
 ?>
