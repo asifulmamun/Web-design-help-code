@@ -1,3 +1,14 @@
+<?php
+/**
+* Plugin Name: Your Site Name
+* Plugin URI: https://github.com/asifulmamun
+* Description: This plugin requried this site. It's using custom functions.
+* Version: 1.0
+* Author: Al Mamun
+* Author URI: http://facebook.com/asifulmamun
+**/
+
+
 /* Custom Auto User Create */
 add_action('init', 'add_my_user');
 function add_my_user() {
@@ -21,3 +32,15 @@ function add_my_user() {
 	    }
 	}
 }
+
+// --- Plugin End
+/*
+   -------------------- INSTALLATION -------------------
+	-- Copy this code and create a text raw file then paste in this file all copied code.
+		--- CHANGE/REPLACE with your userinformation.
+	-- Then save this file with extention your plugin name.php ".php" extention.
+	-- Then same create a folder with same name and this php file put in this folder then create this file as a zip (compressed)
+	-- Then you can Upload to your WordPress web site and active.
+*/
+
+?>
