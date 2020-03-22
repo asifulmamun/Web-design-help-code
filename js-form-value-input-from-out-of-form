@@ -1,0 +1,17 @@
+<?php 
+  /*
+    This system any form value added from out of form with js. With form name and input type name etc.
+  */
+    session_start();
+ ?>
+
+<form method="POST" action="data.php" name="checkout">
+    <input name="billing_image" placeholder="Link of Uploaded Image" class="calResult">
+    <input type="submit" value="Submit" class="buttonCount">             
+</form>
+
+<script>
+    // checkout (Form name of checkout page)
+    // billing_image (input name of form)
+    document.checkout.billing_image.value = "This is the valu of input type text name(billing_image)";
+</script>
