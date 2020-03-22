@@ -1,0 +1,2 @@
+document.querySelector('.className').innerHTML = "value or variable"; // class selector and added value
+document.getElementById("#idName").innerHTML = "value or variable"; // Id selector and added value
