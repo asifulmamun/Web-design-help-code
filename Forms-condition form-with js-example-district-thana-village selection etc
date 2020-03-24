@@ -53,3 +53,70 @@
 		document.getElementById("village").innerHTML= villagelist;
 	}
 </script>
+
+
+<!-- THIS IS READYMADE ADDRESS (DIVISION AND DISTRICT) -->
+
+<!-- <form action="">
+	<select name="divisions" id="divisions" onchange="divisionsList();">
+		<option disabled selected>Select Division</option>
+		<option value="Barishal">Barishal</option>
+		<option value="Chattogram">Chattogram</option>
+		<option value="Dhaka">Dhaka</option>
+		<option value="Khulna">Khulna</option>
+		<option value="Mymensingh">Mymensingh</option>
+		<option value="Rajshahi">Rajshahi</option>
+		<option value="Rangpur">Rangpur</option>
+		<option value="Sylhet">Sylhet</option>
+	</select>
+	
+	
+	<br>
+	<br>
+	<select name="" id="distr">
+		<option disabled selected>Select District</option>
+	</select>
+</form>
+
+<script type="text/javascript">
+	// Division Section select
+	function divisionsList() {
+		// get value from division lists
+		var diviList = document.getElementById('divisions').value;
+
+		// set Barishal division districts
+		if(diviList == 'Barishal'){		
+			var disctList = '<option disabled selected>Select District</option><option value="Barguna">Barguna District</option><option value="Barishal">Barishal District</option><option value="Bhola">Bhola District</option><option value="Jhalokati">Jhalokati District</option><option value="Patuakhali">Patuakhali District</option><option value="Pirojpur">Pirojpur District</option>';
+		}
+		// set Chattogram division districts
+		else if(diviList == 'Chattogram') {
+			var disctList = '<option disabled selected>Select District</option><option value="Cumilla">Cumilla District</option><option value="Feni">Feni District</option><option value="Brahmanbaria">Brahmanbaria District</option><option value="Rangamati">Rangamati District</option><option value="Noakhali">Noakhali District</option><option value="Chandpur">Chandpur District</option><option value="Lakshmipur">Lakshmipur District</option><option value="Chattogram">Chattogram District</option><option value="Coxsbazar">Coxsbazar District</option><option value="Khagrachari">Khagrachari District</option><option value="Bandarban">Bandarban District</option>';	
+		}
+		// set Dhaka division districts
+		else if(diviList == 'Dhaka') {
+			var disctList = '<option disabled selected>Select District</option><option value="Narsingdi">Narsingdi District</option><option value="Gazipur">Gazipur District</option><option value="Shariatpur">Shariatpur District</option><option value="Narayanganj">Narayanganj District</option><option value="Tangail">Tangail District</option><option value="Kishoreganj">Kishoreganj District</option><option value="Manikganj">Manikganj District</option><option value="Dhaka">Dhaka District</option><option value="Munshiganj">Munshiganj District</option><option value="Rajbari">Rajbari District</option><option value="Madaripur">Madaripur District</option><option value="Gopalganj">Gopalganj District</option><option value="Faridpur">Faridpur District</option>';
+		}
+		// set Khulna division districts
+		else if(diviList == 'Khulna') {
+			var disctList = '<option disabled selected>Select District</option><option value="Jashore">Jashore District</option><option value="Satkhira">Satkhira District</option><option value="Meherpur">Meherpur District</option><option value="Narail">Narail District</option><option value="Chuadanga">Chuadanga District</option><option value="Kushtia">Kushtia District</option><option value="Magura">Magura District</option><option value="Khulna">Khulna District</option><option value="Bagerhat">Bagerhat District</option><option value="Jhenaidah">Jhenaidah District</option>';
+		}
+		// set Mymensingh division districts
+		else if(diviList == 'Mymensingh') {
+			var disctList = '<option disabled selected>Select District</option><option value="Sherpur">Sherpur District</option><option value="Mymensingh">Mymensingh District</option><option value="Jamalpur">Jamalpur District</option><option value="Netrokona">Netrokona District</option>';
+		}
+		// set Rajshahi division districts
+		else if(diviList == 'Rajshahi') {
+			var disctList = '<option disabled selected>Select District</option><option value="Sirajganj">Sirajganj District</option><option value="Pabna">Pabna District</option><option value="Bogura">Bogura District</option><option value="Rajshahi">Rajshahi District</option><option value="Natore">Natore District</option><option value="Joypurhat">Joypurhat District</option><option value="Chapainawabganj">Chapainawabganj District</option><option value="Naogaon">Naogaon District</option>';
+		}
+		// set Rangpur division districts
+		else if(diviList == 'Rangpur') {
+			var disctList = '<option disabled selected>Select District</option><option value="Panchagarh">Panchagarh District</option><option value="Dinajpur">Dinajpur District</option><option value="Lalmonirhat">Lalmonirhat District</option><option value="Nilphamari">Nilphamari District</option><option value="Gaibandha">Gaibandha District</option><option value="Thakurgaon">Thakurgaon District</option><option value="Rangpur">Rangpur District</option><option value="Kurigram">Kurigram District</option>';
+		}
+		// set Sylhet division districts
+		else if(diviList == 'Sylhet') {
+			var disctList = '<option disabled selected>Select District</option><option value="Sylhet">Sylhet District</option><option value="Moulvibazar">Moulvibazar District</option><option value="Habiganj">Habiganj District</option><option value="Sunamganj">Sunamganj District</option>';
+		}
+		//  set/send districts name to District lists from division
+		document.getElementById("distr").innerHTML= disctList;
+	}
+</script> -->
