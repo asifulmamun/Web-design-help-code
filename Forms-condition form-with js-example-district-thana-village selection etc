@@ -1,0 +1,55 @@
+<form action="">
+	<!--Division Section-->
+	<select name="" id="districts" onchange="districtsList();">
+		<option disabled selected>Select Division</option>
+		<option value="Dhaka">Dhaka</option>
+		<option value="Kishoreganj">Kishoreganj</option>
+	</select>
+
+	<br><br>
+	<!--Thana Section-->
+	<select name="" id="thana" onchange="thanaList();"></select>
+
+	<br><br>
+	<!--Village Section-->
+	<select name="" id="village"></select>
+</form>
+
+
+<!-- java script -->
+<script type="text/javascript">
+	// district selection by function
+	function districtsList() {
+		// get district
+		var districts = document.getElementById('districts').value;
+
+		// Dhaka
+		if(districts == 'Dhaka'){		
+			var thanalist = '<option disabled selected>Select Thana</option><option value="Adabor">Adabor</option><option value="Mohammadpur">Mohammadpur</option>';
+		}
+		// Kishoreganj
+		else if(districts == 'Kishoreganj'){		
+			var thanalist = '<option disabled selected>Select Thana</option><option value="Kuliarchar">Kuliarchar</option><option value="Bajitpur">Bajitpur</option>';
+		}
+		// set thana
+		document.getElementById("thana").innerHTML= thanalist;
+	}
+
+
+	// thana selection by function
+	function thanaList() {
+		// get thana
+		var thana = document.getElementById('thana').value;
+
+		// Kuliarchar
+		if(thana == 'Kuliarchar'){		
+			var villagelist = '<option disabled selected>Select Thana</option><option value="Kapashatia">Kapashatia</option><option value="Usmanpur">Usmanpur</option>';
+		}
+		// Bajitpur
+		else if(thana == 'Bajitpur'){		
+			var villagelist = '<option disabled selected>Select Thana</option><option value="Duljan">Duljan</option><option value="Bajitpur">Bajitpur</option>';
+		}
+		// set village
+		document.getElementById("village").innerHTML= villagelist;
+	}
+</script>
