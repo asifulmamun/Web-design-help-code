@@ -55,7 +55,12 @@
 </script>
 
 
-<!-- THIS IS READYMADE ADDRESS (DIVISION AND DISTRICT) -->
+<!-- 
+
+------------- THIS IS READYMADE ADDRESS (DIVISION AND DISTRICT) ------------------
+------------- Below Comment, first remove comment then try with anywhere -------------
+
+-->
 
 <!-- <form action="">
 	<select name="divisions" id="divisions" onchange="divisionsList();">
