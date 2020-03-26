@@ -1,0 +1,13 @@
+    // Getting Result
+    $stmt = $conn->prepare("SELECT mobile FROM becomedonor WHERE mobile=?");
+    $stmt->bind_param('s', $checkMobile);
+    $checkMobile =  '01721600688'; // value from post/get method or else
+    $stmt->execute();
+   
+    $result = $stmt->get_result();
+
+    if($result->num_rows === 0) exit('No rows');
+    while($row = $result->fetch_assoc()) {
+        echo $row['mobile'];
+    }
+    $stmt->close(); // Getting Data
