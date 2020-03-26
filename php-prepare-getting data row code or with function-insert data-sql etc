@@ -1,13 +1,28 @@
-    // Getting Result
-    $stmt = $conn->prepare("SELECT mobile FROM becomedonor WHERE mobile=?");
-    $stmt->bind_param('s', $checkMobile); // 's' means prepare data type string (s=string, i= intiger etc)
-    $checkMobile =  '01721600688'; // value from post/get method or else
-    $stmt->execute();
+// Getting Result
+$stmt = $conn->prepare("SELECT mobile FROM becomedonor WHERE mobile=?");
+$stmt->bind_param('s', $checkMobile); // 's' means prepare data type string (s=string, i= intiger etc)
+$checkMobile =  '01721600688'; // value from post/get method or else
+$stmt->execute();
    
-    $result = $stmt->get_result();
+$result = $stmt->get_result();
 
-    if($result->num_rows === 0) exit('No rows');
-    while($row = $result->fetch_assoc()) {
-        echo $row['mobile'];
-    }
-    $stmt->close(); // Getting Data
+if($result->num_rows === 0) exit('No rows');
+while($row = $result->fetch_assoc()) {
+    echo $row['mobile'];
+}
+$stmt->close(); // Getting Data
+
+
+
+// Inserting Data
+$stmt = $conn->prepare("INSERT INTO `becomedonor` (`name`, `bloodGroup`, `mobile`) VALUES (?, ?, ?)");
+$stmt->bind_param("sss", $name, $bloodGroup, $mobile); // excute here
+
+// Get data from form and set value in a variable
+$name = $_POST['name'];
+$bloodGroup = $_POST['bloodGroup'];
+$mobile = $_POST['mobile'];
+
+$stmt->execute(); // stmt executed
+$stmt->close(); // stmt closed
+$conn->close(); // db connection closs
