@@ -11,6 +11,7 @@ while($row = $result->fetch_assoc()) {
     echo $row['mobile'];
 }
 $stmt->close(); // Getting Data
+$conn->close(); // db connection closs
 
 
 
