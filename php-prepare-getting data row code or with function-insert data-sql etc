@@ -1,6 +1,6 @@
     // Getting Result
     $stmt = $conn->prepare("SELECT mobile FROM becomedonor WHERE mobile=?");
-    $stmt->bind_param('s', $checkMobile);
+    $stmt->bind_param('s', $checkMobile); // 's' means prepare data type string (s=string, i= intiger etc)
     $checkMobile =  '01721600688'; // value from post/get method or else
     $stmt->execute();
    
