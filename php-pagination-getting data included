@@ -33,9 +33,8 @@
                             <th scope="col">Hospital and Addres:</th>
                             <td class="text-left" scope="col"><?php echo $row['hospitalandaddress']; ?></td>
                         </tr>
-
-                </tbody>
-        </table>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
