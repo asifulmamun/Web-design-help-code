@@ -1,7 +1,8 @@
 <?php
     
     include $config . 'conn.php'; // db connection
-
+    
+    // PAGINATION GETTING DATA FROM FOOTER PAGINATION BUTTON WITH GET METHOD
     $start = !empty($_REQUEST['start']) ? $_REQUEST['start'] : 0 ;
     $count = $start*3; // start from
     echo $count;
