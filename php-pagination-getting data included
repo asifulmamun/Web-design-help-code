@@ -1,0 +1,53 @@
+<?php
+    
+    include $config . 'conn.php'; // db connection
+
+    $start = !empty($_REQUEST['start']) ? $_REQUEST['start'] : 0 ;
+    $count = $start*3; // start from
+    echo $count;
+    $per_page = 3; // perpage
+
+    // Getting Result
+    $stmt = $conn->prepare("SELECT * FROM `requestblood` WHERE requeststatus = '1' ORDER BY id DESC LIMIT $count, $per_page ");
+    $stmt->execute();
+    $result = $stmt->get_result();
+    if($result->num_rows === 0) exit('Request Not Founded.');
+    while($row = $result->fetch_assoc()) {       
+?> 
+        
+    <!-- showing result with bootstrap -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <table class="table table-hover table-dark">
+                    <tbody>
+                        <tr>
+                            <td colspan="2" class="text-center" scope="col-12" ><?php echo $row['id']; ?></td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <td class="text-left" scope="col"><?php echo $row['name']; ?></td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Hospital and Addres:</th>
+                            <td class="text-left" scope="col"><?php echo $row['hospitalandaddress']; ?></td>
+                        </tr>
+
+                </tbody>
+        </table>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+<?php   
+    } // while for fetch row assoc
+    $stmt->close(); // Getting Data
+    $conn->close(); // db connection closs
+?>
+
+<!-- pagination -->
+<a class="btn btn-dark" href="?start=<?php echo ($start == 0 ) ? 0 : $start-1 ?>">Previous</a>
+<?php $start++; ?>
+<a class="btn btn-dark" href="?start=<?php echo $start?>"> Next</a>
