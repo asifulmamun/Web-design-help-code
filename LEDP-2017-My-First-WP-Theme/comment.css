@@ -1,0 +1,117 @@
+/*
+
+  *some commens css in post.css
+
+*/
+
+
+@media only screen and (max-width: 400px) 
+{
+.commentmetadata {top: 20px;}
+.commentlist p{margin-top: 20px;}
+}
+
+/* For PC */
+@media only screen and (min-width:400px) 
+{
+.commentmetadata {top: 0px;}
+.commentlist p{margin-top: 0px; }
+}
+
+
+.block_comment ul, .block_comment ol {list-style: none}
+
+
+.block_comment{border: 1px solid #ddd;}
+.block_comment{margin: 4px}
+
+.block_comment h3{font-size: 15px; 
+background: #f5f5f5; padding: 5px;  border-bottom: 1px solid #ddd; margin-bottom: 4px;  margin-top: }
+
+
+.commentlist ul,.commentlist ol {list-style: none}
+
+.commentlist .children {margin-left: 20px}
+
+.comment-body {
+  display: block;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+   min-height: 65px;
+   position: relative;
+   margin-top: 4px;
+   
+}
+
+.commentlist  .avatar {float: left}
+
+.commentmetadata {
+  display: inline;
+  float: left;
+  position: absolute;
+  left: 0;
+
+}
+.commentmetadata a{color: #333; font-size: 12px;  vertical-align: top; }
+
+.reply {min-height: 15px;}
+
+.commentlist .reply a {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background: #E7E7E7;
+    padding: 3px 10px;
+    font-size: 11px;
+	color: #000
+}
+
+.commentlist .reply a:hover {
+    background: #f5f5f5;
+    color: #000;
+	text-decoration: none;
+}
+
+
+.says{display: none}
+
+.fn {font-family: sans-serif;
+font-style: normal;
+font-weight: bold;
+margin-left: 7px;
+}
+
+.comment-author.vcard {
+  margin-left: 5px;
+}
+
+.commentlist p{ font-size: 14px; display: block; overflow: hidden; position: relative; padding: 4px;}
+
+#respond > div {
+  background: none repeat scroll 0 0 #e7e7e7;
+  display: inline-block;
+  float: left;
+  margin-top: 2px;
+  padding: 3px 10px;
+  text-align: left;
+}
+#cancel-comment-reply a { color: #000;}
+#cancel-comment-reply a:hover {color: #000; text-decoration: none; background: #f4f4f4}
+div.block_comment div#respond h3{
+ margin-top: 0px;
+
+}
+
+div#respond form#commentform{
+padding: 5px;
+}
+div.block_comment textarea#comment{ max-width: 80%}
+ 
+div.block_comment form#commentform p {padding: 4px}
+
+
+/* some commens css in post.css */
+
+.cment textarea{height: 200px;
+width: 80%;
+}
