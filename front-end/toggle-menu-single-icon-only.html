@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="#">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <br><br><br>
+    <center>
+
+        <nav id="toggle_menu">
+            <div class="toggle_item_top"></div>
+            <div class="toggle_item_middle"></div>
+            <div class="toggle_item_bottom"></div>
+        </nav>
+
+    </center>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        #toggle_menu {
+            width: 3.5rem;
+            height: 3.5rem;
+            position: relative;
+            box-sizing: border-box;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        #toggle_menu .toggle_item_top {
+            width: 100%;
+            border-top: .7em solid black;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+
+            transition: 0.5s;
+        }
+
+        #toggle_menu .toggle_item_middle {
+            width: 100%;
+            border-bottom: .7em solid black;
+            position: absolute;
+            top: 50%;
+            left: 0%;
+            transform: translateY(-50%);
+            /* transition: 0.5s; */
+        }
+
+        #toggle_menu .toggle_item_bottom {
+            width: 100%;
+            border-bottom: .7em solid black;
+            position: absolute;
+            bottom: 0%;
+            right: 0%;
+            transition: 0.5s;
+        }
+
+        .toggle_item_top_hover {
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%) rotateZ(-45deg);
+        }
+
+        .toggle_item_middle_hover {
+            opacity: 0;
+        }
+
+        .toggle_item_bottom_hover {
+            bottom: 50% !important;
+            right: 50% !important;
+            transform: translate(50%, 50%) rotateZ(45deg);
+        }
+    </style>
+
+    <script>
+        // menu click function - Toggle
+        document.getElementById('toggle_menu').addEventListener('click', function () {
+            document.querySelector('.toggle_item_top').classList.toggle('toggle_item_top_hover');
+            document.querySelector('.toggle_item_middle').classList.toggle('toggle_item_middle_hover');
+            document.querySelector('.toggle_item_bottom').classList.toggle('toggle_item_bottom_hover');
+
+        });/* menu click function */
+    </script>
+
+</body>
+
+</html>
