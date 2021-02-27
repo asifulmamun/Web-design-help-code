@@ -140,18 +140,21 @@ add_action( 'init', 'create_post_type' );
 
                 <a href="<?php the_permalink(); ?>"> * <?php the_title(); ?> </a>
             <?php endforeach; ?>
-<!-- custom post notice query as single-notice.php like as single.php -->
+
+			<!-- custom post notice query as single-notice.php like as single.php -->
    <?php if(have_posts()) : ?>
    <?php while(have_posts())  : the_post(); ?>
 	    <a href="<?php bloginfo('home'); ?>">Home</a> » <?php the_title(); ?>	   
 	   <?php the_content(); ?>
-<!--post edit link-->
+
+	   <!--post edit link-->
 <span class="spcontente"><?php edit_post_link('Edit Post', '<p>', '</p>'); ?></span>
 <?php endwhile; ?>
 <?php else : ?>
 <?php _e('404 Error&#58; Not Found', 'bilanti'); ?>
 <?php endif; ?>	
 <div class="recentpostin">Comments Of The Notice Board</div><?php comments_template( '', true ); ?>
+
 
 <!--User Access With Login & Without log in-->
 <?php
