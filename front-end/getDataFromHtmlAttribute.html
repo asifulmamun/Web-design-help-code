@@ -1,0 +1,11 @@
+<span data-typeId="123" data-mamun="UHM" data-type="topic" data-points="-1" data-important="true" id="the-span">
+    Check Console
+</span>
+<script>
+    var typeId = document.getElementById('the-span').getAttribute('data-typeId');
+    var type   = document.getElementById('the-span').getAttribute('data-type');
+    var points = document.getElementById('the-span').getAttribute('data-points');
+    var important = document.getElementById('the-span').getAttribute('data-important');
+    var mamun = document.getElementById('the-span').getAttribute('data-mamun');
+    console.log(`typeId: ${typeId} | type: ${type} | points: ${points} | important: ${important} | Mamun: ${mamun}`); 
+</script>

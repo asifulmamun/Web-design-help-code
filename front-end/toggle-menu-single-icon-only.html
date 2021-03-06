@@ -8,23 +8,6 @@
 
     <link rel="shortcut icon" href="#">
     <title>Document</title>
-</head>
-
-<body>
-
-
-
-    <br><br><br>
-    <center>
-
-        <nav id="toggle_menu">
-            <div class="toggle_item_top"></div>
-            <div class="toggle_item_middle"></div>
-            <div class="toggle_item_bottom"></div>
-        </nav>
-
-    </center>
-
 
     <style>
         * {
@@ -51,8 +34,11 @@
             position: absolute;
             top: 0%;
             left: 0%;
-
             transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
         }
 
         #toggle_menu .toggle_item_middle {
@@ -62,7 +48,10 @@
             top: 50%;
             left: 0%;
             transform: translateY(-50%);
-            /* transition: 0.5s; */
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
         }
 
         #toggle_menu .toggle_item_bottom {
@@ -72,12 +61,20 @@
             bottom: 0%;
             right: 0%;
             transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
         }
 
         .toggle_item_top_hover {
             top: 50% !important;
             left: 50% !important;
             transform: translate(-50%, -50%) rotateZ(-45deg);
+            -webkit-transform: translate(-50%, -50%) rotateZ(-45deg);
+            -moz-transform: translate(-50%, -50%) rotateZ(-45deg);
+            -ms-transform: translate(-50%, -50%) rotateZ(-45deg);
+            -o-transform: translate(-50%, -50%) rotateZ(-45deg);
         }
 
         .toggle_item_middle_hover {
@@ -88,8 +85,26 @@
             bottom: 50% !important;
             right: 50% !important;
             transform: translate(50%, 50%) rotateZ(45deg);
+            -webkit-transform: translate(50%, 50%) rotateZ(45deg);
+            -moz-transform: translate(50%, 50%) rotateZ(45deg);
+            -ms-transform: translate(50%, 50%) rotateZ(45deg);
+            -o-transform: translate(50%, 50%) rotateZ(45deg);
         }
     </style>
+</head>
+
+<body>
+
+    <br><br><br>
+    <center>
+
+        <nav id="toggle_menu">
+            <div class="toggle_item_top"></div>
+            <div class="toggle_item_middle"></div>
+            <div class="toggle_item_bottom"></div>
+        </nav>
+
+    </center>
 
     <script>
         // menu click function - Toggle
@@ -100,7 +115,6 @@
 
         });/* menu click function */
     </script>
-
 </body>
 
 </html>
